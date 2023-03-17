@@ -1,0 +1,160 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font family and color */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: rgb(145, 145, 145);
+}
+
+/* Set maximum width and center the content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style the header section */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(19, 0, 93);
+}
+
+header li a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* Style the navigation menu */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Style the about section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px;
+}
+
+img {
+  height: 500px;
+}
+
+.about img {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+}
+
+.work {
+  padding: 50px;
+}
+
+.work h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.work .images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work .image {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.work .image img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.work .image img:hover {
+  transform: scale(1.1);
+}
+
+/* Style the contact section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: block;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact input[type="submit"]:hover {
+  background-color: #666;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .work .images {
+    justify-content: center;
+  }
+
+  .work .image {
+    width: 45%;
+  }
+}
